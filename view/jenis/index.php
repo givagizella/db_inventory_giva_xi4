@@ -45,7 +45,7 @@
 </nav>
     <div class="container">
         <h1>Data Jenis</h1>
-        <a href="tambah.php" class="btn btn-info">Tambah Data Baru</a>
+        <a href="tambah.php" class="btn btn-info"> <i class="fa-solid fa-plus"></i>Tambah Data Baru</a>
         <table class="table table-striped table-hover">
             <thead>
                 <tr>
@@ -68,8 +68,9 @@
                             <td><?php echo $result['nama_jenis']?></td>
                             
                             <td>
-                                <a href="" class="btn btn-warning">Edit</a>
-                                <a href="" class="btn btn-danger">Hapus</a>
+                                <a href="view_edit.php?id_jenis=<?php echo $result['id_jenis']?>" 
+                                class="btn btn-warning"> <i class="fa-solid fa-pen-to-square"></i>Edit</a>
+                                
                             </td>
                         </tr>
                         <?php 
@@ -81,7 +82,7 @@
                   ?>
             </thead>
         </table>
-
     </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
